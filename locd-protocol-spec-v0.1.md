@@ -855,9 +855,13 @@ A future version of this specification will request:
 
 ## Changelog
 
-### v0.1.0 (2026-02-15)
+### v0.1.1 (2026-02-15)
 - Initial draft specification.
 
 ---
+
+“This specification is published so that others may implement and maintain it.
+The original author does not intend to act as long-term maintainer.”
+
 
 *This specification is licensed under Creative Commons Attribution 4.0 International (CC BY 4.0). You are free to share and adapt this material for any purpose, provided appropriate credit is given.*
