@@ -34,13 +34,13 @@ PLAN
 4. Notify the PM for review:
 
 ```bash
-tmux send-keys -t ccm-pm-legacy-bridge "PLAN_READY ccm-worker-legacy-bridge-7 $(pwd)/plan.md" && sleep 3 && tmux send-keys -t ccm-pm-legacy-bridge C-m
+python3 /mnt/ccm/ccm-code/scripts/notify_session.py ccm-pm-legacy-bridge PLAN_READY "ccm-worker-legacy-bridge-7 $(pwd)/plan.md"
 ```
 
 5. **STOP. Wait for the PM to respond.** Do NOT proceed until you receive a message.
 
 ### Stage 1: Build
-After the PM approves your plan, implement it. When done, run:
+After the PM sends `PLAN_APPROVED`, implement your plan. When done, run:
 
 ```bash
 python3 /mnt/ccm/ccm-code/scripts/minor_task_complete.py \
